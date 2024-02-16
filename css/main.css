@@ -1,0 +1,102 @@
+hr {
+   border-top: 1px dashed ;
+}
+h1{
+   font-family: 'Pacifico', cursive;
+   color: #352E28;
+
+   position: relative;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+z-index: 5;
+
+
+font-size:50px;
+
+}
+h1:hover .layer{
+top: 40%;
+
+}
+label{
+   color: #212529;
+   padding:0px 0px 8px;
+   font-family :"PT Sans Caption"sans-serif;
+}
+.layer{
+position: absolute;
+background-color:#fec160 ;
+/* height: 50%; */
+top: 70%;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: -1;
+transition: all .5s;
+
+}
+h2{
+   background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   font-size: 25px;
+   font-family: "Righteous", cursive;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+.form-btn{
+   background-color: #d1512d;
+   color: #fff;
+   transition: all .5s;
+   padding: .3rem 2rem;
+}
+.form-btn:hover{
+   background-color:  #a03315;
+   color: #fff;
+}
+section{
+   background-color: #F7ECDE;
+   padding: 4rem 0;
+}
+.warningMassae p{
+   color:#352E28 ;
+ 
+   font-size: 21px;
+   line-height: 27.3px;
+   padding: 0px 0px 8px;
+   font-family: "Bree Serif"serif;
+}
+.warningMassae p li i{
+   
+}
+.warningMassae li {
+   list-style: none;
+   
+
+}
+.circles{
+ 
+}
+.circles   span{
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+}
+.shap{
+   
+
+}
+.warningMassae{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   height: 100vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.329));
+}
+.warningMassae .container{
+   
+}

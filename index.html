@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Bookmarker</title>
+</head>
+<body>
+<section class="">
+<div class=" container w-75 ">
+  <div class="d-flex justify-content-center">
+<h1 class="text-center py-1 ">Bookmarker <span class="layer"></span> </h1> </div>
+<hr>
+<div class="d-flex justify-content-center">
+<h2 ><i class="fa-solid fa-bookmark" style="color: #3FA55B;"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark" style="color:#B2AC4A ;" ></i></h2>
+</div>
+<label for="SiteName"  ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+<input oninput="validationSite(this.value)" type="text" id="SiteName" class="form-control my-2" placeholder="Site Name">
+<label for="Siteurl"  ><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+<input oninput="validationURL(this.value)" type="text" id="Siteurl" class=" form-control my-2" placeholder="Site Url">
+
+<div class="text-center"><button class="btn  form-btn my-2" onclick="Show()">Submit</button></div>
+<hr>
+
+<table class="table text-center">
+  <thead>
+    <td>Index</td>
+    <td>Website Name</td>
+    <td>Visit</td>
+    <td>Delete</td>
+  </thead>
+  <tbody id="FormBody">
+   
+    
+ 
+  </tbody>
+</table>
+</div>
+</section>
+
+
+<div id="msg" class=" warningMassae  d-flex justify-content-center align-items-center  z-n1">
+ <div class="massage bg-white py-3 ">
+  <div class="container">
+    <div class=" circles d-flex py-3 ">
+      <span class="rounded-circle me-2 mt-1 bg-danger"></span>
+      <span class="rounded-circle me-2 mt-1 bg-warning"></span>
+      <span class="rounded-circle me-2 mt-1 bg-info"></span>
+
+   
+     <div class="shap ms-auto">
+      <button onclick="reload()" id="close" class=" border-0 bg-transparent  ">
+        <i class="fa-solid fa-xmark close fs-3"></i>
+      </button>
+     </div>
+    </div>
+    
+  <p>Site Name or Url is not valid, Please follow the rules below :</p>
+ <li> <i class="fa-regular fa-circle-right p-2" style="color: brown;"></i> Site name must contain at least 3 characters</li>
+ <li> <i class="fa-regular fa-circle-right p-2" style="color: brown;"></i>Site URL must be a valid one </li>
+
+</div>
+ </div>
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
